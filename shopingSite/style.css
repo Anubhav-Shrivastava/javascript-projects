@@ -1,0 +1,275 @@
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 16px;
+    background-color: rgb(233, 233, 233);
+  }
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .menu-item a {
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+  }
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color:#e82b2b;
+    letter-spacing: 0.5rem;
+  }
+  
+  .hero-section {
+    height: 50vw;
+    background-image: url(https://images.pexels.com/photos/7002964/pexels-photo-7002964.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+  }
+  .buyLinnk {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-heading {
+    font-size: 5rem;
+  }
+  
+  .sub-heading {
+    font-size: 3.2rem;
+  }
+  
+  .buy, .learn {
+    padding: 1.5rem 2.5rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: #212529;
+    color: white;
+    font-weight: 800;
+    border-radius: 0.5rem;
+  }
+  
+  .learn {
+    background-color: white;
+    color: #212529;
+  }
+  
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .gallary-img {
+    width: 100%;
+  }
+  
+  .gallary-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: center;
+    padding: 5rem;
+  }
+  .gallary {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .details {
+    font-size: 2.5rem;
+  }
+  
+  .quality-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+  .quality-item {
+    background-color: rgb(190, 190, 190);
+    width: 30rem;
+    height: 30rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+  }
+  
+  
+  .contact-form {
+    display: grid;
+    max-width: 100rem;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 5rem;
+    gap: 2rem 4rem;
+  }
+  
+  
+  #email, #message, #send-button ,#password {
+    grid-column-start: span 2;
+  }
+  
+  #message   {
+    grid-row-start: span 2;
+  }
+  
+  form > input {
+    border: 1px solid rgb(206, 206, 206);
+    padding: 1rem;
+  }
+  
+  #send-button {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    background: #212529;
+  } 
+  
+  
+  footer {
+    margin: 10rem 5rem;
+  }
+  @media (max-width:1200px) {
+    .quality-item {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+  
+  @media (max-width:900px) {
+    html {
+      font-size: 8px;
+    }
+  }
+  
+  @media (max-width:700px) {
+    html {
+      font-size: 7px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .gallary-section {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+    }
+  
+    .quality-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+    }
+  
+    .quality-item {
+      width: 60%;
+    }
+  
+    #first-name, #last-name {
+      grid-column-start: span 2;
+    }
+  
+    .main-heading {
+      font-size: 4rem;
+    }
+  
+    .sub-heading {
+      font-size: 2.5rem;
+    }
+  
+    .menu {
+      display: none;
+    }
+  }
+  @media (max-width:370px) {
+    html {
+      font-size: 5.5px;
+    }
+  }
+
+
+
+ /* csss for Shping page */
+ .itemNavbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: rgb(210, 198, 198);
+ }
+ .searchtext{
+  width: 60%;
+  height: 25px;
+  border: none;
+  border-radius: 12px;
+  padding:0px 23px;
+}
+.itemsContainer{
+  padding: 20px;
+}
+.item{
+  background-color:rgb(240, 223, 223) ;
+  display: inline-block;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  text-align: center;
+}
+.item h2{
+  font-size: 23px;
+  margin: 10px;
+}
+.item p{
+  font-weight:bolder;
+  font-size: 20px;
+  margin: 12px;
+}
+.item img{
+  height: 220px;
+  width: 310px;
+}
+@media (max-width:700px){
+  .itemNavbar{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .searchtext{
+    margin: 12px;
+  }
+}
+
+
+
+

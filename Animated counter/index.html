@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><img src="image-url" alt="Image description">
+        Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .counter{
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="counter" id="counter"></h1>
+    <button id="button">clickme</button>
+    <script>
+        let count=document.getElementById('counter')
+        let btn=document.getElementById('button')
+      
+        let counter=()=>{
+         for(let i=0;i<=50;i++){
+            setTimeout((value)=>{
+                count.innerHTML=value;
+            },i*1000,i)
+         }
+        }
+        btn.addEventListener('click',counter)
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height:98vh;
+   background:linear-gradient( 130deg,blue, black);
+
+}
+.container{
+    border: 2px dotted white;
+    width: 50%;
+    border-radius: 13px;
+   
+}
+.task-input{
+   padding:3%
+}
+.task-input input{
+    height: 35px;
+    padding: 0 13px;
+    width: 70%;
+    border-radius: 13px;
+}
+.button{
+    color: white;
+    background: rgb(44, 92, 249);
+    height: 35px;
+    margin-left:12px ;
+    width: 43px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s;
+}
+.button:hover{
+   width: 47px;
+   height: 37px;
+}
+
+.listItem{
+    padding:10px;
+    margin: 13px;
+    display: flex;
+    background-color:white;
+    border-radius: 13px;;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}

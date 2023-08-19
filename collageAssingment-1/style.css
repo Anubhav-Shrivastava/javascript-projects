@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+   
+    font-family:Arial;
+}
+.logo-img{
+    height: 60px;
+    width: 60px;
+}
+.banner-bg-section-container{
+    margin-top: 100px;
+}
+.main{
+    height: 100vh;
+    background-image: url(http://alkestravel.com/wp-content/uploads/2014/05/background-travel.jpg);
+     background-size: cover;
+}
+.main-heading{
+    font-family: cursive;
+}
+.main-paragraph{
+   font: Roboto;
+}
+.btn-bg-section button {
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 12px;
+    background-color: orangered;
+    transition: 1s;
+
+}
+.btn-bg-section button:hover{
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    background-color:gold;
+}
+/* why choose us ? container starts from here */
+.wcu-container {
+    background-color:rgb(215, 249, 250);
+    height: Auto;
+    text-align: center;
+}
+.wcu-heading{
+    font-family: 'Zen Dots', cursive;
+}
+.wcu-box{
+    padding:37px ;
+    text-align: left;
+}
+#wcu-card{
+  
+    margin-bottom: 50px;
+}  
+.wcu-card{
+    border-radius: 13px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+.wcu-card-img-top{
+    height: 180px;
+    width: 235px;
+}
+.wcu-card-body{
+    padding: 15px;
+}
+/*Explore container starts from here*/
+.Explore-main-headind{
+    margin: 35px;
+}
+.explor-card{
+   border-radius: 13px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    background-color: rgb(231, 237, 240);
+}
+#explor-card{
+    margin-top: 15px;
+   
+}
+.Explore-main-headind{
+    font-family: 'Zen Dots', cursive;
+}
+
+.explor-card-img-top{
+    height: 170px;
+    width: 226px;
+    margin: 13px;
+    border-radius: 12px;
+}
+.explor-card-body{
+    margin-left:12px ;
+   padding: 13px;
+}
+.explor-card-body a{
+    color: gold;
+}
+.explor-card-body a:hover{
+    color: orangered;
+}
+/* payment css starts here */
+.payment-img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+  }
+  .payment-discount-logo{
+    height: 200px;
+    width: 232px;
+    margin-top: 83px;
+    margin-left: 45px;
+  }
+  .payment-box{
+    margin: 40px;
+    font-family: 'Zen Dots', cursive;
+  }
+  .payment-box h1{
+
+    font-family: 'Zen Dots', cursive;
+  }
+  .payment-btn{
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    background-color: rgb(49, 47, 47);
+  }
+  /* thanks-c0ntainer css starts here */
+  .thanks-logo{
+    height: 200px;
+    width: 232px;
+    margin-top: 23px;
+    border-radius: 50%;
+    margin-left: 45px;
+  }
+
+  .thanks-box{
+    margin: 40px;
+    font-family: 'Zen Dots', cursive;
+  }
+  .thanks-box h1{
+    font-family: 'Zen Dots', cursive;
+  }
+  /* follous icon  and container*/
+  .follow-us-container{
+    margin-top: 20px;
+  }
+ .icon-container{
+    font-size: 38px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(47, 121, 146, 0.314);
+    margin: 15px;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 17px;
+ }
+ .follow-us-heading{
+    font-family: 'Zen Dots', cursive;
+ }
+ /* footer part css */
+ .footer-content{
+    font-size: 80px;
+    background-color: rgb(32, 34, 35);
+    color:#fff;
+    margin-top: 30px;
+    padding: 20px;
+
+ }
+ .email{
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .address{
+    font-size: 15px;
+    margin-bottom: 20px;
+ }

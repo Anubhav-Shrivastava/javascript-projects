@@ -1,0 +1,122 @@
+*{
+  margin: 0px;
+  padding:0px;
+}
+body{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(234, 231, 226);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#expanceHeading{
+  margin: 30px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+#balanceHeading{
+  font-size: 20px;
+  margin: 5px 0px;
+}
+.income{
+  border-right: 1px solid gray;
+  padding: 0px 50px;
+}
+.EXPENCE{
+  padding: 0px 50px;
+}
+.EXPENCE h4{
+  margin:15px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: rgb(188, 95, 95);
+}
+.income h4{
+  margin:15px ;
+  font-weight: bolder;
+  font-size: 20px;
+  color: green;
+}
+
+.inc-expe{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  margin: 20px 0px;
+  width: 400px;
+  height: 70px;
+}
+.his-heading{
+  margin: 15px 0px;
+  padding: 15px 0px;
+  border-bottom: 1px solid gray;
+}
+.add-trans{
+  margin:20px 0px;
+  padding: 20px 0px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+input[type="text"],input[type="number"]{
+  border: 1px;
+  padding: 5px;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  width: 100%;
+  height: 35px;
+  margin: 10px 0px;
+}
+.Alltrans-History{
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+  margin: 20px 0px;
+  background-color: rgb(130, 130, 218);
+  color: white ;
+  border: 1px;
+}
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+ 
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative; 
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  /* line-height: 20px; */
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+}
+.list li:hover .delete-btn{
+  opacity: 1;
+}

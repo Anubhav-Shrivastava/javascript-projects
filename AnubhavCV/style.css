@@ -1,0 +1,155 @@
+body {
+  background-color: ;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  background-color:black;
+  padding: 0px 35px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar li {
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px;
+  margin: 0px 15px;
+  transition: 0.4s;
+  
+}
+
+.navbar li:hover {
+  background-color: rgb(45, 43, 43);
+  font-weight: bold;
+}
+
+.navbar ul {
+  width: 25%;
+  box-shadow: -5px 8px 18px -11px white;
+  border-bottom-left-radius: 30px;
+}
+
+.body {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+  flex-direction: column;
+  padding-top: 30px;
+  border-radius: 15px;
+  background-color: rgb(45, 43, 43);
+  width: 30%;
+  height: 80vh;
+  margin: 0px 30px;
+  position: sticky;
+  top: 8rem;
+}
+
+.profileImage {
+  box-shadow: 1px 7px 43px 3px white;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.main {
+  border-radius: 15px;
+  margin: 11px 30px;
+  background-color:rgb(45, 43, 43);
+  width: 68%;
+  height: 200vh;
+}
+
+/* inside the amin body */
+.project {
+    border: 2px solid white;
+    margin: 2rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .project-card {
+    margin: 1rem;
+    height: 16rem;
+    width: 12rem;
+    border: 2px solid white;
+  }
+  .project-heading{
+    border: 2px solid black;
+    text-align: center;
+  }
+  
+
+@media (max-width: 600px) {
+  .body {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+
+  .main {
+    height: 130vh;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 150px;
+  }
+  .card-container{
+    display: block;
+  }
+  .project-card{
+    width: auto;
+  }
+  .project-heading{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.resume{
+  z-index: 1;
+  display: none;
+}
+.title-wrapper{
+  height: 100vh;
+   width: 100vw;
+  background-color: red;
+  z-index: 0;
+  display: none;
+}
+.title-wrapper-block{
+ display: block;
+}

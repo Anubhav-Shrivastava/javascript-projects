@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 98vh;
+      }
+      .topic {
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topic">This Call apply bind in java Script</div>
+    <!-- <span class="a b">classList is 'a b'</span>-->
+    <script>
+      function getemail() {
+        return (this.email = `${this.firstname}${this.lastname}@email.com`);
+      }
+      function prevSchool(prevschool) {
+        return (this.previousSSchool = `${prevschool}`);
+      }
+      function fullName(age) {
+        return (this.fullNmae = `${this.firstname} ${this.lastname}${age}`);
+      }
+
+      function subject(sub1, sub2, sub3) {
+        return (this.sub = `${sub1},${sub2},${sub3}`);
+      }
+
+      function stuSub(sub1, sub2, sub3) {
+        return (this.subject = `${sub1},${sub2},${sub3}`);
+      }
+
+      let teacher = {
+        firstname: "roham",
+        lastname: "mahata",
+        age: 13,
+      };
+      let student = {
+        firstname: "ram",
+        lastname: "sharma",
+        age: 13,
+      };
+      console.log(prevSchool.apply(student, ["xyzpublicSchool"]));
+      console.log(fullName.apply(student, [23]));
+      console.log(getemail.call(student));
+      console.log(getemail.call(teacher));
+      console.log(student);
+      console.log(subject.call(teacher, "english"));
+      console.log(subject.apply(teacher, ["english", "science", "maths"]));
+      console.log(teacher);
+
+      // let stuSubData=stuSub.bind(student,'english','maths','history')
+      //console.log(stuSubData())
+      //console.log(student)
+
+      // const span = document.querySelector("span");
+      // const classes = span.classList;
+
+      // span.addEventListener("click", () => {
+      //   const result = classes.toggle("c");
+      //   span.textContent = `'c' ${
+      //     result ? "added" : "removed"
+      //   }; classList is now "${classes}".`;
+      // )};
+    </script>
+  </body>
+</html>

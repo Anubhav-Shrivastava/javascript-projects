@@ -1,0 +1,95 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 239, 247);
+}
+main{
+    display: grid;
+    place-items: center;
+}
+
+.underline{
+    width: 90px;
+    height: 4px;
+    margin: 3px;
+    background-color: rgb(3, 187, 254);
+    border-radius:8px ;
+}
+.imageContainer{
+    height: 7.6rem;
+    width: 8rem; 
+    margin-bottom: 28px;
+    border-radius: 50%; 
+    background-color: rgb(106, 194, 220);  
+}
+.imageContainer img{
+    position: relative;
+    top: 6px;
+    right: 6px;
+    bottom: 4px;
+    height: 7.6rem;
+    width: 8rem;
+    border-radius: 50%;   
+}
+article{
+    margin: 8px;
+    width:25rem;
+    background-color: white;
+    margin: 30px;
+    border-radius:15px ;
+    display:grid;
+    border: .6px solid black;
+    place-items: center;
+    padding:10px 30px;
+}
+.container h2{
+    font-size: 40px;
+}
+.container{
+    background-color:transparent;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#info{
+    margin: 30px;
+    text-align: center;
+}
+#job{
+    color: rgb(3, 187, 254);
+    font-size: large;
+}
+#author{
+    font-weight: bold;
+}
+.btn-ontainer button{
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    color: rgb(3, 187, 254);
+    margin: 0px 5px;
+    padding: 8px;
+    border-radius: 50%;
+   transition: .9s;
+}
+.btn-ontainer button:hover{
+    background-color:rgb(3, 187, 254);
+    color: white;
+
+}
+#Surprise-btn{
+    border-color: rgb(3, 187, 254);
+    padding: 8px;
+    border-radius: 10px;
+    background-color:  rgba(3, 187, 254, 0.057);
+    margin: 8px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // <!--this one generate Random Number between 0 and 100 -->
+      let random = Math.round(Math.random() * 100);
+      console.log(random);
+
+      //   this one generate Random String-->
+      let randomString = Math.random().toString(26).slice(2);
+      console.log(randomString);
+
+      // this code snipt generate random alpahabets
+      let char = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let randomnum = Math.round(Math.random() * 27);
+      console.log(char.charAt(randomnum));
+    </script>
+  </body>
+</html>

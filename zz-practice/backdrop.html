@@ -1,0 +1,164 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>codedamn HTML Playground</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+    <style>
+ #backdrop{
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9;
+    box-shadow: 5px 10px 18px #888888;
+    position: fixed;
+    color:red;
+    background-color: white;
+    padding:0px 15px;
+
+}
+.button{
+    margin-top: 5px;
+    margin-bottom: 18px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background-color: skyblue;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#first{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    display: none;
+    margin: 0px 25%;
+    z-index: 12;
+    position: relative;
+    background-color: white;
+    top: 250px;
+    border-radius: 23px;
+    box-shadow:5px 10px 18px #888888;
+}
+#user-input{
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input.visible{
+    display: block;
+    animation: fade-slide-in 0.3 ease-out forwards;
+}
+.back{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+  pointer-events: none;
+  display:none;
+}
+
+.back.visible {
+  display: block;
+  pointer-events: all;
+}
+.buttonEl{
+    margin-top:15px
+}
+
+    </style>
+	<body>
+       <div id="id">
+        <div id="back" class="back"></div>
+		<div id="first">
+         <div id="backdrop">
+            <h1>Welcome to my website</h1>
+            <button id="btn" class="button">Sign in</button>
+        </div>
+        </div>
+        <div  id="input" class="input">
+           <div id="user-input">
+            <label for="userName">Enter User Name</label>
+            <input type="text" name="userName" id="userName">
+            <label for="userPassword">password</label>
+            <input type="password" name="userPassword" id="userPassword">
+             <div class="buttonEl">
+                <button id="btn2" class="button">Back</button>
+                <button id="confirmBtn" class="button">Confirm</button>
+             </div>
+            </div> 
+        </div>
+       </div>
+    
+		<script>
+            const btn=document.getElementById('btn')
+            const btn2=document.getElementById('btn2')
+            const input=document.getElementById('input')
+            const togglemodel =document.getElementById('back')
+            const userInput = input.querySelectorAll('input')
+            const confirmBtn = document.getElementById('confirmBtn')
+            const backdropel = document.getElementById('backdrop')
+            const listbody=document.getElementById('list')
+            const backGrouund=document.getElementById('id');
+            let signInInfo = [];
+
+
+            let toggleListModle=()=>{
+                listbody.classList.toggle('list')
+            }
+
+            function UiUpdate(){
+                if (signInInfo.length === 0){
+                input.style.display = 'block';  
+                }
+                else{
+                  input.style.display = 'none';
+                  backGrouund.style.backgroundClip = "red"
+                }
+            }
+
+            function signinainputVerification(){
+                const username=userInput[0].value;
+                const Password=userInput[1].value;
+
+                if(username=== '' || Password == ''){
+                    alert('please Enter A Vlaid information')
+                }
+
+                let storeSignInInfo={
+                    usersName:username,
+                    Passwords:Password
+                };
+                signInInfo.push(storeSignInInfo);
+                console.log(signInInfo);
+                UiUpdate();
+              
+            }
+              
+            let clearsigninInfo=()=>{
+             for(let inputs of userInput){
+                inputs.value= '';
+             }
+            };
+
+            function backdrop(){
+                togglemodel.classList.toggle('visible');
+            };
+            function signinToggleel(){
+                input.classList.toggle("visible")
+                backdrop();
+                clearsigninInfo()
+            };
+            btn.addEventListener('click',signinToggleel)
+            btn2.addEventListener('click',signinToggleel)
+            togglemodel.addEventListener('click',signinToggleel);
+            confirmBtn.addEventListener('click',signinainputVerification)
+        </script>
+	</body>
+</html>

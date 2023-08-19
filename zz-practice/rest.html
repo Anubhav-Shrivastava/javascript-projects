@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>this is restoperator</h1>
+    <script>
+      function add(...number) {
+        sum = 0;
+        multi = 1;
+        avg = 0;
+        for (let num of number) {
+          sum = sum + num;
+          multi = multi * num;
+        }
+        return {
+          sum,
+          multi,
+        };
+      }
+      console.table(add(1, 2, 3, 3));
+      //array destructuring is use to unpack value from an array and object in distinct veriable
+
+      let arr = [3, 5, 1, 6, 7, 8, 9];
+      let [a, b, j, ...c] = arr;
+      console.log(a, b, j, c);
+//object destructring       
+      let obj = {
+        name: "anubhav",
+        class: 6,
+        age: 18,
+        address: "bakhra",
+      };
+      let output={name,age}=obj;
+      console.log(name,age)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+    color: red;
+    backdrop-filter: blur(2px);
+}
+.notesOutput{
+    display: flex;
+    flex-wrap: wrap;
+}

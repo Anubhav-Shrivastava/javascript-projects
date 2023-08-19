@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: red;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .inputpage {
+        border: 2px solid black;
+        padding: 20px;
+        display: none;
+      }
+      .display {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+     <div class="container">
+      <div class="inputpage" id="input">
+        <input type="text" placeholder="name" />
+        <input type="password" placeholder="**********" />
+      </div>
+      <button id="btn">toggle</button>
+    </div>
+    <script>
+      const xyz = document.getElementById("input");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", function () {
+        xyz.classList.toggle("display");
+      }); 
+       </script>
+      <!-- //map
+     <script>
+      let charestristic = [
+       { 
+        name: 'Anubhav',
+        class: 3,
+        roll: 1,
+        height: 6.1,
+       },
+        {
+        name:'shivam',
+        class: 3,
+        roll: 2,
+        height: 6,
+      },
+      {
+        name:'rohit',
+        class: 3,
+        roll: 3,
+        height: 5.9,
+      },
+      {
+        name:'mohit',
+        class: 3,
+        roll: 4,
+        height: 5.6,
+      }
+       
+    ];
+
+    const detail=charestristic.map((ch)=>{
+         return {
+            name:ch.name,
+            roll:ch.roll
+         }
+    })
+      console.log(detail)
+    </script> -->
+  </body>
+</html>

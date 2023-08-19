@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        padding: 0;
+        margin: 0;
+     }
+     .navigation{
+        width: 100%;
+        height: 3rem;
+        background-color: black;
+        color: white;
+        padding: 10px 0px;
+        font-weight: bolder;
+        font-size: 20px;
+        position: fixed;
+     }
+     .nav-list{
+        display: flex;
+        list-style-type: none;
+        float: right;
+     }
+     .nav-list li{
+        display: flex;
+        flex-direction: column;
+        padding: 13px;
+     }
+     #check{
+        display: none;
+     }
+    
+     .checkBtn{
+        display: none;
+     }
+    
+     @media(width<=500px){
+         .checkBtn{
+             display: block;
+             margin:13px;
+         }
+        ul{
+       display: flex;
+       
+       flex-direction: column;
+       height: 100vh;
+       width: 100%;
+       right: 100%;
+       background-color:orangered;
+       position: fixed;
+       align-items: center;
+       top: 68px;
+    }
+    #check{
+        display:block;
+    }
+     #check:checked~ul{
+        right: 40%;
+     }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation">
+        <div class="right">
+            <input type="checkbox" id="check">
+          <label for="check" class="checkBtn">
+             <i class="fa fa-bars"></i>
+           </label>
+           <ul class="nav-list">
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+            <li>map</li>
+        </ul>
+        </div>
+    </nav>
+    <script src="https://kit.fontawesome.com/8a70bb9577.js" crossorigin="anonymous"></script>
+</body>
+</html>
