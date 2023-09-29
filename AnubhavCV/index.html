@@ -1,64 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnubhavCV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+    <script
+    src="https://kit.fontawesome.com/8a70bb9577.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AnubhavCV</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-
-  <div class="navbar">
-    <h1 class="logo">ANUBHAV SHRIVASTAVA</h1>
-    <ul class="navList">
-      <li>Contact</li>
-      <li>Skils</li>
-      <li id="resume-click">Resume</li>
-    </ul>
-  </div>
-  <div id="xxxx">
-  <div class="body">
-    <div class="sidebar">
-      <img class="profileImage"
-        src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
-        alt="profileImage" />
-      <h1>Anubhav Shrivastava</h1>
-      <h2>Front-End Developer</h2>
-      <br>
-      <br>
-      <p><b>D.O.B</b> :- 15-01-2002</p>
-      <p><b>Email</b> :- Anubhavk282@gmail.com</p>
-      <p><b>Contact</b> :- +917717721364</p>
-      <p><b>Addresss</b> :- city-Muzaffarpur,Village-Bakhra,843101</p>
+  <body>
+    <!-- ********************************************************
+            navbar
+  *******************************************************           -->
+    <div class="navbar">
+      <h1 class="logo">ANUBHAV SHRIVASTAVA</h1>
+      <ul class="navList">
+        <li id="home-click">About</li>
+        <li id="skill-click">Skills</li>
+        <li id="resume-click">Resume</li>
+        <li id="contact-click">Contact</li>
+      </ul>
     </div>
-    <div class="main">
-      <div class="project">
-        <h1 class="project-heading">Project</h1>
-        <div class="card-container">
-          <div class="project-card card"></div>
-          <div class="project-card card"></div>
-          <div class="project-card card"></div>
+    <!-- ********************************************************
+            sidebar
+  *******************************************************           -->
+    <div id="xxxx">
+      <div class="body">
+        <div class="sidebar">
+          <button id="sideBar-Btn"><i class="fa-solid fa-bars" style="color:orange;"></i></button>
+          <img
+            class="profileImage"
+            src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+            alt="profileImage"
+          />
+          <h1>Anubhav Shrivastava</h1>
+          <h2>Front-End Developer</h2>
+          <br />
+          <br />
+          <div id="info" class="hide">
+            <p><b>D.O.B</b> :- 15-01-2002</p>
+          <p><b>Email</b> :- Anubhavk282@gmail.com</p>
+          <p><b>Contact</b> :- +917717721364</p>
+          <p><b>Addresss</b> :- city-Muzaffarpur,<br>Village-Bakhra,843101</p>
+          </div>
+          <div class="contactLinks">
+            <a href=""><i class="fa-brands fa-linkedin-in fa-beat" style="color:orange;"></i></a>
+            <a href=""><i class="fa-solid fa-n fa-beat" style="color:orange;"></i></a>
+            <a href=""><i class="fa-brands fa-github fa-beat" style="color: orange;"></i>
+            </a>
+          </div>
+        </div>
+        <!-- ********************************************************
+            About
+  *******************************************************           -->
+        <div class="main">
+          <div class="about" id="about">
+            <header class="header">
+              <h2 class="h2 article-title">About me</h2>
+              <hr>
+            </header>
+
+            <section class="about-text">
+              <p>
+                As a BCA fresher with a strong foundation in web development and a
+                passion for creating userfriendly interfaces, I am seeking an
+                opportunity to leverage my skills and contribute to the success
+                of innovative projects. I aim to grow as a Frontend Developer
+                and be a valuable asset to a dynamic and forward-thinking
+                organization..
+              </p>
+
+              <p>
+                My job is to build your website so that it is functional and
+                user-friendly but at the same time attractive. Moreover, I add
+                personal touch to your product and make sure that is
+                eye-catching and easy to use. My aim is to bring across your
+                message and identity in the most creative way.
+              </p>
+            </section>
+          </div>
+            <!-- ********************************************************
+            skillls
+  *******************************************************           -->
+  <div class="skills" id="skills">
+    <div class="heading">
+        <h2>Skills</h2>
+    </div>
+    <div id="progressBars">
+      <i class="fa-brands fa-html5 fa-bounce"></i>
+        <div class="progress-bar">
+            <label id="lable" for="progress1">Skill 1:</label>
+            <progress id="progress1" max="100" value="50"></progress>
+        </div>
+        <i class="fa-brands fa-css3-alt fa-bounce"></i>
+        <div class="progress-bar">
+            <label id="lable" for="progress2">Skill 2:</label>
+            <progress id="progress2" max="100" value="50"></progress>
+        </div>
+        <i class="fa-brands fa-js fa-bounce" style="color: #d3d643; border-radius: 10px id="lable";"></i>
+        <div class="progress-bar">
+            <label  id="lable"for="progress3">Skill 3:</label>
+            <progress id="progress3" max="100" value="50"></progress>
+        </div>
+        <i class="fa-brands fa-html5"></i>
+        <div class="progress-bar">
+            <label id="lable" for="progress4">Skill 4:</label>
+            <progress id="progress4" max="100" value="50"></progress>
+        </div>
+    </div>
+</div>
+            <!-- ********************************************************
+            Resume
+  *******************************************************           -->
+          <div class="resume" id="resume">
+           <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            necessitatibus molestias eos praesentium in soluta porro ipsum,
+            placeat rem. Eligendi commodi neque corrupti, laudantium dolorem
+            explicabo voluptatem architecto a omnis in consequuntur impedit
+            illum veritatis sit quia pariatur facilis voluptatum, officiis quasi
+            cupiditate veniam porro saepe. Dignissimos laboriosam culpa
+            exercitationem recusandae ea rem, et tempore esse unde molestias
+            voluptates sapiente quasi quam dolores libero vitae ipsam quas.</p>
+          </div>
+            <!-- ********************************************************
+            contact
+  *******************************************************           -->
+          <div class="contact" id="contact">
+            <footer id="contactItem">
+              <h1 class="section-heading">Contact Us</h1>
+              <form action="#" class="contact-form">
+                <input type="text" name="first-name" id="first-name"placeholder="First Name" />
+                <input type="text" name="last-name" id="last-name" placeholder="Last Name"/>
+                <input type="email" name="email" id="email" placeholder="Email" />
+                <input type="text"name="message" id="message" placeholder="Enter your message" />
+                <button id="send-button">Send</button>
+              </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-  <div class="title-wrapper"id="title-wrapper">
-    <ul>
-    <li class="h5">Web design</li>
-    <data value="80">80%</data>
-  </ul>
-  </div>
-
-
-  <!--javaScript -->
-  <script src="script.js"></script>
-</body>
-
+    <!--javaScript -->
+    <script src="script.js"></script>
+  </body>
 </html>

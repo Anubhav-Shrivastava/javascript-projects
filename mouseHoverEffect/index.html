@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .hero{
+            height: 100vh;
+            width: 100vw;
+            background-color: black;
+        }
+        .cursor{
+            height: 20px;
+            width: 20px;
+            background-color: white;
+            border-radius: 100px;
+            position: absolute;
+            z-index: 9999999;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- main -->
+    <div class="hero">
+        <div class="cursor"id="move"></div>   
+    </div>
+    
+    <!-- javaScript -->
+    <script>
+     window.addEventListener("mousemove",(det)=>{
+        let cursor=document.getElementById("move");
+        cursor.style.transform = `translate(${det.clientX}px, ${det.clientY}px)`;
+     })
+    </script>
+</body>
+</html>

@@ -47,11 +47,12 @@ function display(){
       </div>`;
   });
   let notesElm = document.getElementById("notesOutput");
-  if(notes.length != 0){
+  if(notesObj.length != 0){
     notesElm.innerHTML= notesOutput; 
   }else{
     notesElm.innerHTML="dont have any thing to show"
   }
+  
 };
 
 let dltNote=(index)=>{
