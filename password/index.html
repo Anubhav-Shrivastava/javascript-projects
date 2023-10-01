@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Form</title>
+</head>
+<style>
+   body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+    .login{
+       border: 1px solid black;
+       padding: 10vw;
+    }
+    .input{
+        padding:2vw;
+    }
+    #submit{
+        text-align: center;
+    }
+    contact-form{
+        display: grid;
+    }
+</style>
+<body>    
+    <div class="login">
+        <form action="#" class="contact-form" id="passwordForm">
+            <input type="text" class="input" name="userName" id="first-name"placeholder="User Name" required/>
+            <input type="password" class="input" id="password" name="password" placeholder="Password" required><br><br>
+            <h4 id="info"></h4>
+            <input  type="submit" id="submit" value="Submit">
+          </form>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+</html>
