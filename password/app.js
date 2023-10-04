@@ -28,17 +28,22 @@ document.getElementById("passwordForm").addEventListener("submit", (event) => {
     message.style.color = "red";
   }
 
-  
-  let checkbox=document.getElementById("checkbox");
-  checkbox.addEventListener("click",()=>{
-      if(checkbox.checked){
-        pass.type="text"
-      }
-      else{
-        pass.type="password"
-      }
-
-  })
-
 });
+
+
+let checkbox=document.getElementById("checkbox");
+checkbox.addEventListener("click",()=>{
+  let pass = document.getElementById("password");
+  let checkBoxLable=document.getElementById('checkBoxLable')
+    if(checkbox.checked){
+      pass.type="text"
+      checkBoxLable.innerHTML="hide"
+    }
+    else{
+      pass.type="password"
+     
+      checkBoxLable.innerHTML="show"
+    }
+
+})
   
