@@ -1,7 +1,8 @@
+let pass = document.getElementById("password");
+let message=document.getElementById("info");
+
 document.getElementById("passwordForm").addEventListener("submit", (event) => {
   event.preventDefault(); // Prevent the default form submission behavior
-  let pass = document.getElementById("password");
-  let message=document.getElementById("info")
   let specialChars = "!@#$%^&*(?/";
   let hasSpecialChar = false;
 
@@ -33,7 +34,7 @@ document.getElementById("passwordForm").addEventListener("submit", (event) => {
 
 let checkbox=document.getElementById("checkbox");
 checkbox.addEventListener("click",()=>{
-  let pass = document.getElementById("password");
+ // let pass = document.getElementById("password");
   let checkBoxLable=document.getElementById('checkBoxLable')
     if(checkbox.checked){
       pass.type="text"
